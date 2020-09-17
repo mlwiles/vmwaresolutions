@@ -9,3 +9,6 @@ Some tips and tricks I picked up while working on IBM VMWare Solutions offerings
  - In that same spirit, I welcome being challeneged because my goal is to provide accurate and useful content
  - I can update and change my disclosure at anytime :)
  - I am a terrible speller
+
+
+ [vCloud Director](vcd/)
