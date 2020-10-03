@@ -1,4 +1,5 @@
-## Configuring an IPSec tunnel between two vDCs using Private Network Endpoint (PNE) 
+## Order an Private Network Endpoint (PNE) to connect your IBM account to IBM VMWare Solutions Shared virtual datacenter
+
 There is an offering from IBM VMWare Solutions that allows communication between an IBM Cloud account and IBM VMWare Solutions Shared taking advantage of the IBM Cloud backbone.  This provides a fast connection between the accounts as well as avoids any ingress/egress charges.  To enabled this, from the IBM VMWare Solutions Shared virtual data center select 'Create a private network endpoint' as seen in the screenshot below.
 
 ![1-pne.png](images/1-pne.png)
