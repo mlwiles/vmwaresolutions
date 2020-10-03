@@ -10,6 +10,7 @@ In order to allow the IBM account to have access, you will need to identify whic
 ![2-pne.png](images/2-pne.png)
 
 Once created, the PNE will show the information that is required for firewall rules.  Note the 52. ip address is the internal address that is used by IBM VMWare Solutions Shared.  This is NOT a public IP.  Also the 166.9 IP will be your PNE address will be important for your firewall rules.  Additionally the IP/subnet that you whitelisted at ordertime.  We do not allow changes via the UI, this will be ticket based at this time.
+
 ![3-pne.png](images/3-pne.png)
 
 Once ordered and configured you will be able to take advantage of the unlimited access from your whitelisted accounts into the virtual datacenter. 
