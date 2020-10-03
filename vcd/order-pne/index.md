@@ -15,13 +15,23 @@ To request a PNE from the IBM VMWare Solutions Shared virtual data center select
 <img src="images/1-pne.png" width="1000" style="border: 1px solid black">
 
 For the free version, select Multi-tenant.  This option runs on shared hardware and the throughput is not guaranteed.  For faster and guaranteed throughput, check out the Dedicated options.
+
 In order to allow the IBM account to have access, you will need to identify which IP(s) or subnet(s) can have access.  
 
-Ordering a PNE does not automatically allow all of IBM Cloud to have access to your vDC, this just allows them to pass through the PNE.  The default firewall rules on your edge gateway prevents all inbound traffic (this is completely under control of your organization admin).  In this example we allow all of IBM Cloud private (10.0.0.0/8) but will later show how to use the firewall rules to allow only endpoints we desire.
+Ordering a PNE does not automatically allow all of IBM Cloud to have access to your vDC, this just allows the whitelisted IP ranges to pass through the PNE.  The default firewall rules on your edge gateway prevents all inbound traffic (this is completely under control of your organization admin). 
+
+In this example we allow all of IBM Cloud private (10.0.0.0/8) but will later show how to use the firewall rules to allow only endpoints we desire.
 
 <img src="images/2-pne.png" width="200" style="border: 1px solid black">
 
-Once created, the PNE will show the information that is required for firewall rules.  Note the 52. ip address is the internal address that is used by IBM VMWare Solutions Shared.  This is NOT a public IP.  The 166.9 IP will be your PNE address will be important for your firewall rules.  The IP/subnet that you whitelisted at order time.  We do not allow changes via the IBM Cloud UI; requests will be ticket based at this time.
+Once created, the PNE will show the information that is required for firewall rules.  
+
+Note:
+- the 52. ip address is the internal address that is used by IBM VMWare Solutions Shared.  This is NOT a public IP.  
+- the 166.9 IP will be your PNE address will be important for your firewall rules.  
+- the IP/subnet that you whitelisted at order time.  
+
+We do not allow changes via the IBM Cloud UI; requests will be ticket based at this time.
 
 <img src="images/3-pne.png" width="1000" style="border: 1px solid black">
 
@@ -31,6 +41,6 @@ Below is an example of a customer configuring their edge gateway to allow forwar
 
 - Customer VM 192.168.1.2
 - Firewall rule (in green) allowing all traffic from the PNE with destination to the customer edge gateway ip.
-- DNAT redirecting SSH traffic on port 22 to the target customer VM.
+- DNAT rule (in green) redirecting SSH traffic on port 22 to the target customer VM.
 
 <img src="images/4-pne.png" width="1000" style="border: 1px solid black">
