@@ -11,4 +11,5 @@ Some tips and tricks I picked up while working on IBM VMWare Solutions offerings
  - I am a terrible speller <-- !!
 
 
+Topics:
 - [vCloud Director](vcd/index.md)
