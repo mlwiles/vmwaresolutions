@@ -23,7 +23,7 @@ The diagram below describes the flow of the connection between the two datacente
 - vCloud Director virtual datacenter: mwiles-fra-v10
 - Edge Service Gateway address: 52.117.132.72
 - VM network: 172.15.0.0/16
-- VM (centos-dal): 172.14.0.2
+- VM (centos-dal): 172.15.0.2
 
 ## Configuring the Dallas vDC.
 
