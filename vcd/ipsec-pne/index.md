@@ -61,7 +61,7 @@ Deploy at least 1 VM to test your tunnel.  172.16.0.2 will be our Dallas-side ex
 <img src="images/6-dal-esg-fw.png" width="1000" style="border: 1px solid black">
 
 ### Network Address Translation SourceNAT rule:
-- This rule will allow all traffic from the Dallas ESG network to route to translate to the ESG Address.
+- _This rule is NOT required for the IPSec tunnel, but will be required if you want to access services on the IBM Cloud network (such as DNS, WSUS, Capsule services)._
   - Original: 172.16.0.0/16
   - Translated: 52.117.132.152
 
@@ -119,7 +119,7 @@ Deploy at least 1 VM to test your tunnel.  172.15.0.2 will be our Frankfurt-side
   - Destination: Any (this can be more restrictive if required)
 
 ### Network Address Translation SourceNAT rule:
-- This rule will allow all traffic from the Frankfurt ESG network to route to translate to the ESG Address.
+- _This rule is NOT required for the IPSec tunnel, but will be required if you want to access services on the IBM Cloud network (such as DNS, WSUS, Capsule services)._
   - Original: 172.15.0.0/16
   - Translated: 52.117.132.72
 
