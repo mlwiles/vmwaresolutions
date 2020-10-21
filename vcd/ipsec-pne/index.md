@@ -144,3 +144,4 @@ From the web-console, we log into the VMs in each side.  Then ensure we can ssh 
 
 <img src="images/20-ssh-across-tunnel.png" width="1000" style="border: 1px solid black">
 
+_Note the information described in this example are guidelines.  There are multiple ways to configure the various parts of the example.  Please adjust accordingly for your needs._
