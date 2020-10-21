@@ -6,3 +6,5 @@ This example will demonstrate how to connect two vCloud Director vDCs located in
 
 The diagram below describes the flow of the connection between the two datacenters
 
+<img src="images/1-vdc-pne-ipsec.png" width="1000" style="border: 1px solid black">
+
