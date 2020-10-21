@@ -2,7 +2,7 @@
 
 In order to use a PNE for your IPSec tunnel between your IBM account to your IBM VMWare Solutions Shared virtual datacenter (vDC), you must first have a PNE ordered in your vDC.  See how to [Order IBM Private Network Endpoint (PNE)](../order-pne/index.md).  Only one side requires a PNE.  
 
-_If you are connecting a your IBM account to your vDC, you only need the PNE deployed in one of your vDCs (you can share the network linked in your tunnel across multiple vDCs)._
+_If you are connecting your IBM account to your vDC, you only need the PNE deployed in one of your vDCs (you can share the network linked in your tunnel across multiple vDCs)._
 
 This example will demonstrate how to connect two vCloud Director vDCs located in two different physical datacenters to each other using an IPSec tunnel and one PNE.  This allows bi-directional communication from virtual machines in both virtual datacenters using the IBM Cloud backbone.
 
