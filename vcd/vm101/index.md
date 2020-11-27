@@ -124,10 +124,11 @@ Select the required properties.  In this case you will need to select Storage Po
 <img src="images/21-vm-to-vapp.png" width="1000" style="border: 1px solid black">
 Finally once the task is completed, navigate back to the list of VMs in the vApp and you will see the VM is now in the vApp.<br>
 Compute > vApps > *select vApp* > Virtual Machines 
-<img src="images/21-vm-to-vapp.png" width="1000" style="border: 1px solid black">
+<img src="images/22-vm-to-vapp.png" width="1000" style="border: 1px solid black">
+And now the VM is part of a vApp and can take advantage of those features in alarge deployment, or not. 
 
-For Pricing details on the VM components visit [
-VMware Solutions Shared pricing](https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-shared_pricing)
+Many items were discussed here and some come with a cost, be sure to check out the pricing details on the VM components visit [
+VMware Solutions Shared pricing](https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-shared_pricing) section.
 
 _Note the information described in this example are guidelines.  There are multiple ways to configure the various parts of the example.  Please adjust accordingly for your needs._
 

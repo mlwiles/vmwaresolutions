@@ -9,6 +9,7 @@ Some different use cases involving vCD. Most likely these will be using VMWare S
 
 - [Simple Deploy of a VM](vm101/index.md)
 - [Networking made easy](network101/index.md)
+- [Customized VMs](custom-vms/index.md)
 - [Internet access](internet/index.md)
 - [Secure inbound access](inbound/index.md)
 - [Order IBM Private Network Endpoint (PNE)](order-pne/index.md)

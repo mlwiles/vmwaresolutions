@@ -2,6 +2,8 @@
 
 Some tips and tricks I picked up while working on [VMWare Solutions on IBM Cloud](https://cloud.ibm.com/infrastructure/vmware-solutions/console) offerings.
 
+<img src="images/ic4v.png" width="1000" style="border: 1px solid black">
+
 
 - disclosure as always:
   - I am not an author but just trying to share my findings.
