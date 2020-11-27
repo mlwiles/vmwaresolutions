@@ -88,7 +88,8 @@ Until we have some networking available, we will only prep a few items but for c
   - **Compute** - CPU and Memory allocations can be changed here.  These are common VM attributes that can impact the performance of the VM.
   - **NICs** - NIC creation, deletion, and modification can take place in this view.  We will revisit this when we assign network details.
 - **Guest OS Customization** - in this section, you can edit guest customizations.  Guest customizations are described in detail from VMWare documentation - [Understanding Guest Customizations](https://docs.vmware.com/en/VMware-Cloud-Director/9.5/com.vmware.vcloud.user.doc/GUID-BB682E4D-DCD7-4936-A665-0B0FBD6F0EB5.html) however for our purposes we are going to edit the machine access or set local administrator password.  
-To set a password, go to Compute > Virtual Machines > *select VM* > Guest OS Customization > EDIT
+To set a password, go to <br>
+Compute > Virtual Machines > *select VM* > Guest OS Customization > EDIT
 Either use the *auto generate* option or *specify password*.
 <img src="images/14-edit-vm-guest.png" width="1000" style="border: 1px solid black">
 - **Guest Properties** - in the current deployment of vCD, there are no user configurable properties.
@@ -98,11 +99,11 @@ Either use the *auto generate* option or *specify password*.
   - **Tasks** - View history of tasks related to the VM.
   - **Events** - View history of events related to the VM.
 
-Now we are ready to apply the guest OS customizations and power on the VM.
+Now we are ready to apply the guest OS customizations and power on the VM.<br>
 Compute > Virtual Machines > *VM Menu* > Power On and Force Recustomization
 <img src="images/15-poweron-vm.png" width="1000" style="border: 1px solid black">
 
-Once the VM is powered on, from the same menu acquire a web console.
+Once the VM is powered on, from the same menu acquire a web console.<br>
 Compute > Virtual Machines > *VM Menu* > Launch Web Console
 <img src="images/16-webconsole-vm.png" width="1000" style="border: 1px solid black">
 
@@ -110,6 +111,20 @@ After the we console is launched and the VM it ready, login with the Admin (root
 <img src="images/17-login-vm.png" width="1000" style="border: 1px solid black">
 
 After you login, there is not really much that can be done with this VM without networking.  That’s all for now, good luck deploying and modifying VMs.  Other sections will continue on and add additional configurations to the vDC.
+
+Oh wait ... I forgot that I said I would show you how to add the VM to the vApp.  Showing that the VM we created is NOT part of a vApp.<br>
+Compute > vApps > *select vApp* > Virtual Machines 
+<img src="images/18-vm-to-vapp.png" width="1000" style="border: 1px solid black">
+Nagivate back to the list of VM's, identify the VM to take action on and select *Move To* option and select the vApp as a target.<br>
+Compute > Virtual Machines > *VM Menu* > Move To
+<img src="images/19-vm-to-vapp.png" width="1000" style="border: 1px solid black">
+Select the target vApp...
+<img src="images/20-vm-to-vapp.png" width="1000" style="border: 1px solid black">
+Select the required properties.  In this case you will need to select Storage Policy as it defaults to none selected, but this also give you an opportunity to change some other attributes of the VM prior to moving it.
+<img src="images/21-vm-to-vapp.png" width="1000" style="border: 1px solid black">
+Finally once the task is completed, navigate back to the list of VMs in the vApp and you will see the VM is now in the vApp.<br>
+Compute > vApps > *select vApp* > Virtual Machines 
+<img src="images/21-vm-to-vapp.png" width="1000" style="border: 1px solid black">
 
 For Pricing details on the VM components visit [
 VMware Solutions Shared pricing](https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-shared_pricing)
