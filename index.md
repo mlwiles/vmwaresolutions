@@ -14,6 +14,6 @@ Some tips and tricks I picked up while working on [VMWare Solutions on IBM Cloud
 
 
 Topics:
-- [VMWare vCloud Director](vcd/index.md)
-- [Veeam Backup and Replication](vas/index.md)
-- [Veeam Cloud Connect Replication](vccr/index.md)
+- [VMWare vCloud Director](https://mlwiles.github.io/vmwaresolutions/vcd/)
+- [Veeam Backup and Replication](https://mlwiles.github.io/vmwaresolutions/vas/)
+- [Veeam Cloud Connect Replication](https://mlwiles.github.io/vmwaresolutions/vccr/)

@@ -7,12 +7,12 @@
 
 Some different use cases involving vCD. Most likely these will be using VMWare Solutions on IBM Cloud, but will try to make reference when its more of a generic solution or an IBM specific offering.
 
-- [Simple Deploy of a VM](https://mlwiles.github.io/vmwaresolutions/vcd/vm101/index.md)
-- [Networking made easy](https://mlwiles.github.io/vmwaresolutions/vcd/network101/index.md)
-- [Customized VMs](https://mlwiles.github.io/vmwaresolutions/vcd/custom-vms/index.md)
-- [Internet access](https://mlwiles.github.io/vmwaresolutions/vcd/internet/index.md)
-- [Secure inbound access](https://mlwiles.github.io/vmwaresolutions/vcd/inbound/index.md)
-- [Order IBM Private Network Endpoint (PNE)](https://mlwiles.github.io/vmwaresolutions/vcd/order-pne/index.md)
-- [IPSec Tunnel over IBM PNE](https://mlwiles.github.io/vmwaresolutions/vcd/ipsec-pne/index.md)
+- [Simple Deploy of a VM](https://mlwiles.github.io/vmwaresolutions/vcd/vm101/)
+- [Networking made easy](https://mlwiles.github.io/vmwaresolutions/vcd/network101/)
+- [Customized VMs](https://mlwiles.github.io/vmwaresolutions/vcd/custom-vms/)
+- [Internet access](https://mlwiles.github.io/vmwaresolutions/vcd/internet/)
+- [Secure inbound access](https://mlwiles.github.io/vmwaresolutions/vcd/inbound/)
+- [Order IBM Private Network Endpoint (PNE)](https://mlwiles.github.io/vmwaresolutions/vcd/order-pne/)
+- [IPSec Tunnel over IBM PNE](https://mlwiles.github.io/vmwaresolutions/vcd/ipsec-pne/)
 
 [Main Page](https://mlwiles.github.io/vmwaresolutions)
