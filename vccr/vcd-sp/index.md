@@ -31,7 +31,7 @@ Finally the summary ...
 <img src="images/10-vccr-summary.png" width="1000" style="border: 1px solid black">
 Once the Wizard is completed, the service provider entry is ready for use. 
 <img src="images/11-vccr-sp.png" width="1000" style="border: 1px solid black">
-Next we will setup a [Simple Replication job to vCD](vcd-job/index.md). 
+Next we will setup a [Simple Replication job to vCD](https://mlwiles.github.io/vmwaresolutions/vccr/vcd-job/index.md). 
 
 _Note the information described in this example are guidelines.  There are multiple ways to configure the various parts of the example.  Please adjust accordingly for your needs._
 
