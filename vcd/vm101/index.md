@@ -132,7 +132,7 @@ VMware Solutions Shared pricing](https://cloud.ibm.com/docs/vmwaresolutions?topi
 
 _Note the information described in this example are guidelines.  There are multiple ways to configure the various parts of the example.  Please adjust accordingly for your needs._
 
-[VMWare vCloud Director](https://mlwiles.github.io/vmwaresolutions/vcd/)
+[VMWare vCloud Director](https://mlwiles.github.io/vmwaresolutions/vcd/)<br/>
 [Main Page](https://mlwiles.github.io/vmwaresolutions)
 
 

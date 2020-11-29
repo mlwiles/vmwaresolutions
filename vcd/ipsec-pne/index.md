@@ -148,5 +148,5 @@ From the web-console, we log into the VMs in each side.  Then ensure we can ssh 
 
 _Note the information described in this example are guidelines.  There are multiple ways to configure the various parts of the example.  Please adjust accordingly for your needs._
 
-[VMWare vCloud Director](https://mlwiles.github.io/vmwaresolutions/vcd/)<br>
+[VMWare vCloud Director](https://mlwiles.github.io/vmwaresolutions/vcd/)<br/>
 [Main Page](https://mlwiles.github.io/vmwaresolutions)

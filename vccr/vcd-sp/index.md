@@ -35,5 +35,5 @@ Next we will setup a [Simple Replication job to vCD](https://mlwiles.github.io/v
 
 _Note the information described in this example are guidelines.  There are multiple ways to configure the various parts of the example.  Please adjust accordingly for your needs._
 
+[Veeam Cloud Connect Replication](https://mlwiles.github.io/vmwaresolutions/vccr/)<br/>
 [Main Page](https://mlwiles.github.io/vmwaresolutions)
-
