@@ -33,7 +33,7 @@ Use the *Choose...* options to change the vApp and/or Storage Policy.  Default f
 
 <img src="images/6-create-job.png" width="1000" style="border: 1px solid black">
 
-Next determine what *suffix* the replication VMs will get (this is not required and can be left blank).  Number of restore points will determine the number of snapshots left for the target VM in the replication jobs.  The [Advanced(https://helpcenter.veeam.com/docs/backup/vsphere/replica_advanced_vm.html) *options* can be described in the Veeam documentation.
+Next determine what *suffix* the replication VMs will get (this is not required and can be left blank).  Number of restore points will determine the number of snapshots left for the target VM in the replication jobs.  The [Advanced](https://helpcenter.veeam.com/docs/backup/vsphere/replica_advanced_vm.html) *options* can be described in the Veeam documentation.
 
 <img src="images/7-create-job.png" width="1000" style="border: 1px solid black">
 
@@ -41,11 +41,11 @@ Next determine what *suffix* the replication VMs will get (this is not required 
 
 <img src="images/8-create-job.png" width="1000" style="border: 1px solid black">
 
-[Application aware processing](https://helpcenter.veeam.com/docs/backup/vsphere/replica_vss_vm.html) *options* can be described in the Veeam documentation.
+[Application-aware processing](https://helpcenter.veeam.com/docs/backup/vsphere/replica_vss_vm.html) *options* can be described in the Veeam documentation.
 
 <img src="images/9-create-job.png" width="1000" style="border: 1px solid black">
 
-Schedule the job is desired.
+Schedule the job if desired.
 
 <img src="images/10-create-job.png" width="1000" style="border: 1px solid black">
 
@@ -53,25 +53,25 @@ Run the job when finished if desired.  We choose this option.
 
 <img src="images/11-create-job.png" width="1000" style="border: 1px solid black">
 
-## Run the job
+## The job in progress
 
 While the job is running, there are several things going on of interest.  First on the local VBR, the processing of the source VM begins with a snapshot.
 
 <img src="images/12-running-job.png" width="1000" style="border: 1px solid black">
 
-The snapshot is created on the local VBR called *VEEAM BACKUP TEMPORARY SNAPSHOT*.
+The snapshot is created by the local VBR called *VEEAM BACKUP TEMPORARY SNAPSHOT*.
 
 <img src="images/13-running-job.png" width="1000" style="border: 1px solid black">
 
-The transfer of data can be measured from the source VBR.
+The transfer of data can be measured / monitored from the source VBR.
 
 <img src="images/14-running-job.png" width="1000" style="border: 1px solid black">
 
-The *New* replica will be created in the vCD Org > vCD virtual Datacenter > vCD vApp.
+The *New* replica will be created in the vCD Org > vCD virtual Datacenter > Compute > vCD vApp > Virtual machines OR vCD Org > vCD virtual Datacenter > Compute > Virtual machines.
 
 <img src="images/15-running-job.png" width="1000" style="border: 1px solid black">
 
-The snapshot is transferred from the local VBR to the Service Provider VMWare vCloud infrastructure.  vCD is backed by vSphere so as we navigate to the vCD Org (folder) > vCD virtual Datacenter (folder) > vCD vApp (folder) ... we ultimately fine the new VM.  While the replication is in progress, the new snapshot will be created with the name *Veeam Replica Working Snapshot*.  Once the snapshot is successfully applied to the target VM a snapshot will be called *Restore Point MM-DD-YYYY HH:mm*.  These *Restore Points* can be controlled from the local VBR.
+The snapshot is transferred via the local VBR to the Service Provider VMWare vCloud infrastructure.  vCD is backed by vSphere so as we navigate the backend view to the vCD Org (folder) > vCD virtual Datacenter (folder) > vCD vApp (folder) ... we ultimately find the new VM.  While the replication is in progress, the new snapshot will be created with the name *Veeam Replica Working Snapshot*.  Once the snapshot is successfully applied to the target VM the snapshot is renamed to *Restore Point MM-DD-YYYY HH:mm*.  These *Restore Points* can be controlled from the local VBR.
 
 <img src="images/16-running-job.png" width="1000" style="border: 1px solid black">
 
