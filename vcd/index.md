@@ -1,4 +1,4 @@
-## VMWare vCloud Director
+## VMWare vCloud Director (vCD)
 
 - [VMWare Solutions on IBM Cloud](https://cloud.ibm.com/infrastructure/vmware-solutions/console)
 - [VMware Solutions Shared overview](https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-shared_overview)

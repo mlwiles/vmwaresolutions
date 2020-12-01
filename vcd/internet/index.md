@@ -1,4 +1,4 @@
-## Coming Soon 
+## vCD - Internet access (Coming Soon)
 
 <!-- 
 Updated: 2020-11-25

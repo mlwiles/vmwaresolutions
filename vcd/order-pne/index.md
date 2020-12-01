@@ -1,4 +1,4 @@
-## Order a Private Network Endpoint (PNE) to connect your IBM account to your IBM VMWare Solutions Shared virtual datacenter (vDC)
+## vCD - Order a Private Network Endpoint (PNE) to connect your IBM account to your IBM VMWare Solutions Shared virtual datacenter (vDC)
 
 Updated: 2020-10-02 
 

@@ -1,4 +1,4 @@
-## Simple Deploy of a VM 
+## vCD - Simple Deploy of a VM 
 
 Updated: 2020-11-26
  

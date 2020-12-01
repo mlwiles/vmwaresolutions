@@ -1,4 +1,4 @@
-## Simple Replication job to vCD
+## VCCR - Simple Replication job to vCD
 
 Updated: 2020-11-30
 

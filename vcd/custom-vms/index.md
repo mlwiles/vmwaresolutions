@@ -1,5 +1,4 @@
-## Coming Soon 
-
+## vCD - Customized VMs (Coming Soon)
 <!-- 
 Updated: 2020-11-25
 --> 

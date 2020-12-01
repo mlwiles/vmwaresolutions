@@ -1,4 +1,4 @@
-## Coming Soon 
+## vCD - Secure inbound access (Coming Soon)
 
 <!-- 
 Updated: 2020-11-25
