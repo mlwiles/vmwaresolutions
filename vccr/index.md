@@ -7,9 +7,9 @@
 
 Some different use cases involving Veeam CCR.  Most of these will be focused on intevgration with VMWare vCloud Director. Most likely these will be using VMWare Solutions on IBM Cloud, but will try to make reference when its more of a generic solution or an IBM specific offering.
 
-- [Setup service provider](vcd-sp/index.md)
-- [Simple Replication job to vCD](vcd-job/index.md)
-- [Disaster Recovery Prep](vcd-dr/index.md)
-- [Migration to vCD](vcd-migration/index.md)
+- [Setup service provider](https://mlwiles.github.io/vmwaresolutions/vccr/vcd-sp/)
+- [Simple Replication job to vCD](https://mlwiles.github.io/vmwaresolutions/vccr/vcd-job/)
+- [Disaster Recovery Prep](https://mlwiles.github.io/vmwaresolutions/vccr/vcd-dr/)
+- [Migration to vCD](https://mlwiles.github.io/vmwaresolutions/vccr/vcd-migration/)
 
 [Main Page](https://mlwiles.github.io/vmwaresolutions)
