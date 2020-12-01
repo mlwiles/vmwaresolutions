@@ -26,7 +26,7 @@ For some troubleshooting tips at this point already.  If you get to the *Credent
 
 1. make sure your VBR has internet access - this is required by Veeam to validate the revocation status of the SSL certificate provided by the VCCR components. In the case of VMWare Solutions on IBM Cloud we currently use DigiCert as a certificate provider for this offering.  The Online Certificate Status Protocol (OCSP) for DigiCert is ocsp.digicert.com.  <br>**NOTE** this OCSP service is using HTTP not HTTPS therefore using port 80.  For more details in this, contact Veeam support for specifics.
 2. make sure your VBR has DNS to resolve not only the primary DNS entry, but the specific gateway DNS entries.  The VCCR service uses Round Robin DNS to distribute the replication workload among all gateways in available.  So if you perform a DNS lookup of the VCCR Service Provider URL, multiple IPs will be resolved.  However adding just these to your DNS or *hosts* file is not sufficient.  It is recommended that your VBR have access to public DNS as well.
-3. make sure that your VBR has fiewall access for port 6180  
+3. make sure that your VBR has firewall access for port 6180  
 
 <img src="images/6-vccr-dns.png" width="1000" style="border: 1px solid black">
 
