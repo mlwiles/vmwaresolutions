@@ -11,6 +11,4 @@ Some different use cases involving Veeam Backup Services.  Most of these will be
 - [Setup a simple backup job](backup/index.md)
 - [Restore from backup](restore/index.md)
 
-
 [Main Page](https://mlwiles.github.io/vmwaresolutions)
-

@@ -33,7 +33,7 @@ Use the *Choose...* options to change the vApp and/or Storage Policy.  Default f
 
 <img src="images/6-create-job.png" width="1000" style="border: 1px solid black">
 
-Next determine what *suffix* the replication VMs will get (this is not required and can be left blank).  Number of restore points will determine the number of snapshots left for the target VM in the replication jobs.  The [Advanced](https://helpcenter.veeam.com/docs/backup/vsphere/replica_advanced_vm.html) *options* can be described in the Veeam documentation.
+Next determine what *suffix* the replication VMs will get (this is not required and can be left blank).  Number of restore points will determine the number of snapshots left for the target VM in the replication jobs.  The [Advanced](https://helpcenter.veeam.com/docs/backup/vsphere/replica_advanced_vm.html) *options* can be described in the Veeam documentation.  One setting in this section is to enable the Email Notifications for this replication job.
 
 <img src="images/7-create-job.png" width="1000" style="border: 1px solid black">
 
@@ -78,6 +78,10 @@ The snapshot is transferred via the local VBR to the Service Provider VMWare vCl
 Now the Replication Job can be scheduled for the desired frequency.  
 
 Next steps are to test / validate the replications via failover jobs for the [Disaster Recovery Prep](https://mlwiles.github.io/vmwaresolutions/vccr/vcd-dr/).  If the requirement is to permanently [Migration to vCD](https://mlwiles.github.io/vmwaresolutions/vccr/vcd-migration/) then a *Permanent Failover* is required.
+
+Otherwise, you can enjoy the summary emails that can be sent on the scheduled cadence to report the status of the replication job.
+
+<img src="images/17-job-email-summary.png" width="1000" style="border: 1px solid black">
 
 _Note the information described in this example are guidelines.  There are multiple ways to configure the various parts of the example.  Please adjust accordingly for your needs._
 
