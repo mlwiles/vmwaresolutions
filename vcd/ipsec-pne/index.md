@@ -173,8 +173,6 @@ Complete config from the DAL side of the tunnel
 
 <img src="images/13-dal-esg-ipsec.png" width="1000" style="border: 1px solid black">
 
-
-
 _Note the information described in this example are guidelines.  There are multiple ways to configure the various parts of the example.  Please adjust accordingly for your needs._
 
 [VMWare vCloud Director](https://mlwiles.github.io/vmwaresolutions/vcd/)<br/>

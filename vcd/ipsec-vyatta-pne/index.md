@@ -46,9 +46,3 @@ _Note the information described in this example are guidelines.  There are multi
 
 [VMWare vCloud Director](https://mlwiles.github.io/vmwaresolutions/vcd/)<br/>
 [Main Page](https://mlwiles.github.io/vmwaresolutions)
-
-
-
-'internal' connects to one of the edge gateway's internal interfaces
-'distributed' fast and efficient East-West routing connected to an internal interface of a distributed router that is exclusively associated with this gateway
-'subinterface' connect to the edge gateway's internal trunk interface
