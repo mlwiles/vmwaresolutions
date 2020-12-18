@@ -6,7 +6,7 @@ In order to use a PNE for your IPSec tunnel between your IBM account to your IBM
 
 Additionally there is a detailed example of connecting two separate virtual datacenters using NSX-to-NSX Edge configuration - [IPSec Tunnel over IBM PNE](https://mlwiles.github.io/vmwaresolutions/vcd/ipsec-pne/)  
 
-This example will demonstrate how to connect a vCloud Director vDC to another device, Fortigate (NSX-to-Fortigate) in different IBM Cloud account.  This allows bi-directional communication from virtual machines in the virtual datacenter to IBM Cloud accound fronted by the Vyatta device using the IBM Cloud backbone.  
+This example will demonstrate how to connect a vCloud Director vDC to another device, Fortigate (NSX-to-Fortigate) in different IBM Cloud account.  This allows bi-directional communication for virtual machines in the virtual datacenter to virtual machines in a different IBM Cloud account fronted by the Vyatta device using the IBM Cloud backbone.  
 
 Details of the Fortigate are listed below.
 
