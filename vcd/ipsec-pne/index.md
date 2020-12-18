@@ -76,15 +76,23 @@ To enabled the service, toggle the status switch to show green.
 
 ### Create the IPSec VPN Site:
 - Enabled: True
-- Name: ipsec-dal
+- Enable perfect forward secrecy (PFS): False
+- Name: ipsec-dal-fra
 - Local Id: ipsec-dal
 - Local Endpoint: 52.117.132.152
 - Local Subnets: 172.16.0.0/16
 - Peer Id: ipsec-fra
 - Peer Endpoint: 166.9.48.94
 - Peer Subnets: 172.15.0.0/16
+- Extensions: EMPTY
+- Encryption Algorithm: AES
+- Authentication: PKS
 - Pre-Shared Key: _keycode used on both sides_
+- Diffie-Hellman Group: DH5
+- Digest Algorithm: SHA1
+- IKE Option: IKEv1
 - IKE Responder Only: Enabled (**this is on the PNE Side ONLY**)
+- Session Type: Policy Based Session
 
 _In our example we did not change the Encryption Algorithm, Authentication, Diffie-Hellman Group, Digest Algorithm, IKE Option, Session Type_
 
@@ -130,6 +138,8 @@ To enabled the service, toggle the status switch to show green.
 
 ### Create the IPSec VPN Site:
 - Enabled: True
+- Enable perfect forward secrecy (PFS): False
+- Name: ipsec-fra-dal
 - Name: ipsec-fra
 - Local Id: ipsec-fra
 - Local Endpoint: 52.117.132.72
@@ -137,14 +147,33 @@ To enabled the service, toggle the status switch to show green.
 - Peer Id: ipsec-dal
 - Peer Endpoint: 166.9.48.94
 - Peer Subnets: 172.16.0.0/16
+- Extensions: EMPTY
+- Encryption Algorithm: AES
+- Authentication: PKS
 - Pre-Shared Key: _keycode used on both sides_
+- Diffie-Hellman Group: DH5
+- Digest Algorithm: SHA1
+- IKE Option: IKEv1
 - IKE Responder Only: **Leave Disabled**
+- Session Type: Policy Based Session
 
 ## Test the tunnel
 
 From the web-console, we log into the VMs in each side.  Then ensure we can ssh into the other VM as shown in the screenshot.
 
 <img src="images/20-ssh-across-tunnel.png" width="1000" style="border: 1px solid black">
+
+## Full config screenshots
+
+Complete config from the FRA side of the tunnel
+
+<img src="images/12-fra-esg-ipsec.png" width="1000" style="border: 1px solid black">
+
+Complete config from the DAL side of the tunnel
+
+<img src="images/13-dal-esg-ipsec.png" width="1000" style="border: 1px solid black">
+
+
 
 _Note the information described in this example are guidelines.  There are multiple ways to configure the various parts of the example.  Please adjust accordingly for your needs._
 
