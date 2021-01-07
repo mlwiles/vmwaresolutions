@@ -1,6 +1,6 @@
-## VAS - Setup a simple backup job (Coming Soon) 
+## VAS - Setup a simple backup job 
 
-Updated: 2020-12-06
+Updated: 2020-01-05
 
 One of the enabled services for [VMWare Solutions on IBM Cloud](https://cloud.ibm.com/infrastructure/vmware-solutions/console) is the ability to use Veeam Availability Services (VAS) via a Self Service Portal (SSP) to backup and restore VMs within your virtual Data Center.  The VAS service is automatically enabled by default for all virtual data centers.  This is noted on the vDC order page and owners are only charged for what you use in the VAS.
 
@@ -126,6 +126,8 @@ Otherwise, you can enjoy the summary emails that can be sent on the scheduled ca
 
 Many items were discussed here and some come with a cost, be sure to check out the pricing details on the VM components visit [
 VMware Solutions Shared pricing](https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-shared_pricing) section.
+
+[Restore from backup](https://mlwiles.github.io/vmwaresolutions/vas/restore/index.md) is next best set of steps that can be taken to test the backups as well as restore in the case of a data loss, corruption, or some other reasons.
 
 _Note the information described in this example are guidelines.  There are multiple ways to configure the various parts of the example.  Please adjust accordingly for your needs._
 

@@ -8,7 +8,7 @@
 
 Some different use cases involving Veeam Backup Services.  Most of these will be focused on intevgration with VMWare vCloud Director. Most likely these will be using VMWare Solutions on IBM Cloud, but will try to make reference when its more of a generic solution or an IBM specific offering.
 
-- [Setup a simple backup job](backup/index.md)
-- [Restore from backup](restore/index.md)
+- [Setup a simple backup job](https://mlwiles.github.io/vmwaresolutions/vas/backup/index.md)
+- [Restore from backup](https://mlwiles.github.io/vmwaresolutions/vas/restore/index.md)
 
 [Main Page](https://mlwiles.github.io/vmwaresolutions)
