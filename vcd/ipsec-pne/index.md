@@ -37,7 +37,7 @@ Create a 172.16.0.0 Network
 - Name: 172.16.0.0/16
 - Gateway CIDR: 172.16.0.1/16
 - Network Type: Routed
-- Interface Type: Distributed
+- Interface Type: Subinterface
 
 <img src="images/3-dal-network.png" width="1000" style="border: 1px solid black">
 
@@ -114,7 +114,7 @@ Create a 172.15.0.0 Network
 - Name: 172.15.0.0/16
 - Gateway CIDR: 172.15.0.1/16
 - Network Type: Routed
-- Interface Type: Distributed
+- Interface Type: Subinterface
 
 Deploy at least 1 VM to test your tunnel.  172.15.0.2 will be our Frankfurt-side example.  Attach it to your network and ensure the network interface is configured properly.
 
