@@ -1,4 +1,4 @@
-## vCD - IPSec Tunnel over IBM Private Network Endpoint (PNE) using Vyatta
+## vCD - IPSec Tunnel over IBM Private Network Endpoint (PNE) using Vyatta 
 
 Updated: 2020-12-17
 

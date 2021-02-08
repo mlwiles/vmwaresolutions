@@ -1,4 +1,4 @@
-## vCD - IPSec Tunnel over IBM Private Network Endpoint (PNE) using SRX (Coming Soon)
+## vCD - IPSec Tunnel over IBM Private Network Endpoint (PNE) using SRX
 
 <!-- 
 Updated: 2020-12-17
