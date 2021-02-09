@@ -14,7 +14,7 @@ Some different use cases involving vCD. Most likely these will be using VMWare S
 - [Secure inbound access](https://mlwiles.github.io/vmwaresolutions/vcd/inbound/)
 - [Creating vAPP Templates](https://mlwiles.github.io/vmwaresolutions/vcd/vapp-templates/)
 - [Order IBM Private Network Endpoint (PNE)](https://mlwiles.github.io/vmwaresolutions/vcd/order-pne/)
-- [IPSec Tunnel over IBM PNE](https://mlwiles.github.io/vmwaresolutions/vcd/ipsec-esg-pne/)
+- [IPSec Tunnel over IBM PNE - ESG](https://mlwiles.github.io/vmwaresolutions/vcd/ipsec-esg-pne/)
 - [IPSec Tunnel over IBM PNE - SRX](https://mlwiles.github.io/vmwaresolutions/vcd/ipsec-srx-pne/)
 - [IPSec Tunnel over IBM PNE - Vyatta](https://mlwiles.github.io/vmwaresolutions/vcd/ipsec-vyatta-pne/)
 - [IPSec Tunnel over IBM PNE - Fortigate](https://mlwiles.github.io/vmwaresolutions/vcd/ipsec-fortigate-pne/)

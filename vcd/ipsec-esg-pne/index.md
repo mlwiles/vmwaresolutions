@@ -1,4 +1,4 @@
-## vCD - IPSec Tunnel over IBM Private Network Endpoint (PNE) 
+## vCD - IPSec Tunnel over IBM Private Network Endpoint (PNE) using ESG
 
 Updated: 2020-10-21
 
