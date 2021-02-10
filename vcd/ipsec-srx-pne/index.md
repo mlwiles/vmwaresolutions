@@ -27,6 +27,7 @@ To do so, we have deployed an SRX appliance in the vCenter in FRA (Juniper appli
 - VM network: 172.15.0.0/16
 - VM (centos-dal): 172.15.0.2
 
+## Configuring the Dallas vDC.
 ### Same network in Dallas vDC from the referenced example, no changes...
 
 ## Configuring the Frankfurt vCenter instance (SRX)
