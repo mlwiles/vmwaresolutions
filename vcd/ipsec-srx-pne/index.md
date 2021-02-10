@@ -187,6 +187,12 @@ show security ipsec security-associations
 ```
 <img src="images/3-vdc-pne-ipsec.png" width="1000" style="border: 1px solid black">
 
+## Test the tunnel
+
+From the web-console, we log into the VMs in each side.  Then ensure we can ssh/ping the other VM as shown in the screenshot.
+
+<img src="images/4-vdc-pne-ipsec.png" width="1000" style="border: 1px solid black">
+
 
 _Note the information described in this example are guidelines.  There are multiple ways to configure the various parts of the example.  Please adjust accordingly for your needs._
 
