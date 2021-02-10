@@ -2,12 +2,12 @@
 
 Updated: 2021-02-09
 
-Based on the initial example of [IPSec Tunnel over IBM Private Network Endpoint (PNE) using ESG](https://mlwiles.github.io/vmwaresolutions/vcd/ipsec-esg-pne/), this modification of the example will change the inbound 'external' or 'inbound' side of the IPSec tunnel which was using ESG and to now be using SRX.
+Based on the initial example of an [IPSec Tunnel over IBM PNE - ESG](https://mlwiles.github.io/vmwaresolutions/vcd/ipsec-esg-pne/), this modification of the example will change the 'external' or 'inbound' side of the IPSec tunnel which was using ESG and to now use an SRX.
 
-In this example we replace the vCloud Directory with ESG in Frankfurt ...
+Replace the vCloud Directory using an ESG in Frankfurt ...
 <img src="images/1-vdc-pne-ipsec.png" width="1000" style="border: 1px solid black">
 
-with a vCenter and an Juniper SRX.
+with a vCenter and a Juniper SRX.
 <img src="images/2-vdc-pne-ipsec.png" width="1000" style="border: 1px solid black">
 
 To do so, we have deployed an SRX appliance in the vCenter in FRA (Juniper appliance image - vsrx_20.4r1.12_scsi)
@@ -28,7 +28,8 @@ To do so, we have deployed an SRX appliance in the vCenter in FRA (Juniper appli
 - VM (centos-fra): 172.15.0.2
 
 ## Configuring the Dallas vDC.
-### Same network in Dallas vDC from the referenced example, no changes...
+
+Same config in Dallas vDC from the referenced example, [IPSec Tunnel over IBM PNE - ESG](https://mlwiles.github.io/vmwaresolutions/vcd/ipsec-esg-pne/), no changes...
 
 ## Configuring the Frankfurt vCenter instance (SRX)
 
@@ -179,8 +180,7 @@ security {
 }
 
 ```
-
-You can check the status of the IPsec tunnel on the SRX device by checking for ike and ipsec security associations. Typically you should expect to see one `ike SA`, and one *pair* of `ipsec SAs` for each remote-subnet/local-subnet combination.
+Check the status of the IPsec tunnel on the SRX device by reviewing the ike and ipsec security associations. Typically you should expect to see one `ike SA`, and one *pair* of `ipsec SAs` for each remote-subnet/local-subnet combination.
 ```
 show security ike security-associations
 show security ipsec security-associations
@@ -189,10 +189,9 @@ show security ipsec security-associations
 
 ## Test the tunnel
 
-From the web-console, we log into the VMs in each side.  Then ensure we can ssh/ping the other VM as shown in the screenshot.
+From the web-console, we log into the VMs in each side.  Then ensure we can ping the other VM as shown in the screenshot.
 
 <img src="images/4-vdc-pne-ipsec.png" width="1000" style="border: 1px solid black">
-
 
 _Note the information described in this example are guidelines.  There are multiple ways to configure the various parts of the example.  Please adjust accordingly for your needs._
 
