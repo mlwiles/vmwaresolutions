@@ -90,6 +90,11 @@ resource "vcd_vapp_vm" "vm-centos7" {
 ### Process part 2 - Put VMs on the Network
 What the Terraform creates ... 
 - 1 vdc org network
+```
+####################### NETWORKS #######################
+# https://registry.terraform.io/providers/vmware/vcd/latest/docs/data-sources/network_routed
+resource "vcd_network_routed" "template-network" {
+```
   - allow access from vapps 
 
 ```
@@ -100,10 +105,14 @@ resource "vcd_vapp_org_network" "vapp-net-centos7" {
   - attach the vms
 
 ```
-####################### NETWORKS #######################
-# https://registry.terraform.io/providers/vmware/vcd/latest/docs/data-sources/network_routed
-resource "vcd_network_routed" "template-network" {
-
+####################### VIRTUAL MACHINES #######################
+# https://www.terraform.io/docs/providers/vcd/r/vapp_vm.html
+####################### CENTOS7 #######################
+resource "vcd_vapp_vm" "vm-test-centos7" {
+...
+  network {
+    type                                = var.vm_network_type
+    name                                = vcd_vapp_org_network.vapp-net-test-centos7.org_network_name
 ```
 - 2 snat rules
   - outbound all VMs to the internet
@@ -115,9 +124,9 @@ resource "vcd_network_routed" "template-network" {
 # https://www.terraform.io/docs/providers/vcd/r/nsxv_dnat.html
 ####################### ALL VMs #######################
 ... 
-resource "vcd_nsxv_snat" "outbound-edge-snat-service" {
-... 
 resource "vcd_nsxv_snat" "outbound-edge-snat-tenant-external" {
+... 
+resource "vcd_nsxv_snat" "outbound-edge-snat-service" {
 ```
 - 6 dnat rules
   - redirect single ip using different ports per service
