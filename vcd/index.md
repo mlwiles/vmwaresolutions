@@ -18,5 +18,6 @@ Some different use cases involving vCD. Most likely these will be using VMWare S
 - [IPSec Tunnel over IBM PNE - SRX](https://mlwiles.github.io/vmwaresolutions/vcd/ipsec-srx-pne/)
 - [IPSec Tunnel over IBM PNE - Vyatta](https://mlwiles.github.io/vmwaresolutions/vcd/ipsec-vyatta-pne/)
 - [IPSec Tunnel over IBM PNE - Fortigate](https://mlwiles.github.io/vmwaresolutions/vcd/ipsec-fortigate-pne/)
+- [Terraform deploying all OS templates](https://mlwiles.github.io/vmwaresolutions/vcd/terraform/)
 
 [Main Page](https://mlwiles.github.io/vmwaresolutions)
