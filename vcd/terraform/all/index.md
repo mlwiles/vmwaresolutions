@@ -250,12 +250,11 @@ Replace in public catalog - This is not using Terraform at this time.
 
 While this is not a very detailed post, it gives some high level use cases as well as some sample files for the said use cases.  Please let me know if there are parts that you would like me to elaborate on. 
 
-Reference Links
+Reference Links<br>
 [Terraform Docs](https://www.terraform.io/docs/cli/commands/apply.html)<br/>
 [Terraform Download](https://www.terraform.io/downloads.html) <br/>
-Providers<br/>
-[Terraform]https://registry.terraform.io/browse/providers)<br/>
-vCD - https://github.com/vmware/terraform-provider-vcd)<br/>
+[Terraform Providers](https://registry.terraform.io/browse/providers)<br/>
+[Terraform vCD Provider](https://github.com/vmware/terraform-provider-vcd)<br/>
 
 My Source Terraform<br/>
 [Create / Prep Images](https://github.com/mlwiles/stuff/tree/master/scripts/terraform/vcd/prep-templates)<br/>
