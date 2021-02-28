@@ -94,6 +94,7 @@ What the Terraform creates ...
 resource "vcd_vapp_org_network" "vapp-net-centos7" {
 ```
   - attach the vms
+
 ```
 ####################### NETWORKS #######################
 # https://registry.terraform.io/providers/vmware/vcd/latest/docs/data-sources/network_routed
@@ -103,14 +104,15 @@ resource "vcd_network_routed" "template-network" {
 - 2 snat rules
   - outbound all VMs to the internet
   - outbound all VMs to the IBM service network
+
 ```
 ####################### FIREWALL and DNAT RULES #######################
 # https://www.terraform.io/docs/providers/vcd/r/nsxv_firewall_rule.html
 # https://www.terraform.io/docs/providers/vcd/r/nsxv_dnat.html
 ####################### ALL VMs #######################
-...
+... 
 resource "vcd_nsxv_snat" "outbound-edge-snat-service" {
-...
+... 
 resource "vcd_nsxv_snat" "outbound-edge-snat-tenant-external" {
 ```
 - 6 dnat rules
@@ -122,6 +124,7 @@ resource "vcd_nsxv_snat" "outbound-edge-snat-tenant-external" {
     - 33890 port is redirected to 3389 on Windows 2016
     - 33891 port is redirected to 3389 on Windows 2019
   - All DNAT rules are also Whitelisted to restrict access
+
 ```
 # DNAT for each OS ... (CENTOS7 Example)
 ####################### CENTOS7 #######################
@@ -130,6 +133,7 @@ resource "vcd_nsxv_dnat" "vm-centos7-edge-dnat-ssh" {
 - 7 firewall rules
   - 6 whitelisted inbound for DNAT rules
   - 1 outbound any/any for the vcd org network
+
 ```
 # Firewall file for each OS ... (CENTOS7 Example)
 ####################### CENTOS7 #######################
