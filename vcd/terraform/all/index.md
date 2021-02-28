@@ -58,6 +58,7 @@ The process to update requires:
 cp main.tf.1prep main.tf
 terraform apply --auto-approve
 ```
+
 <img src="images/1-terraform-cli.png" width="1000" style="border: 1px solid black">
 
 What the Terraform creates ... 
@@ -69,6 +70,7 @@ What the Terraform creates ...
   - os customizations
     - passwords
     - networking (IPs)
+
 ```
 # vAPP/VM for each OS ... (CENTOS7 Example)
 ####################### VAPPS #######################
@@ -80,6 +82,7 @@ resource "vcd_vapp" "vapp-centos7" {
 ####################### CENTOS7 #######################
 resource "vcd_vapp_vm" "vm-centos7" {
 ```
+
 <img src="images/1-terraform.png" width="1000" style="border: 1px solid black">
 
 <img src="images/2-vapps-vms.png" width="1000" style="border: 1px solid black">
@@ -88,6 +91,7 @@ resource "vcd_vapp_vm" "vm-centos7" {
 What the Terraform creates ... 
 - 1 vdc org network
   - allow access from vapps 
+
 ```
 # VAPP network access for each OS ... (CENTOS7 Example)
 ####################### VAPP NETWORKS #######################
