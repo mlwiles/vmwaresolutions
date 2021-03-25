@@ -1,7 +1,6 @@
 ## vCD - Networking made easy 
-<!-- 
+
 Updated: 2021-03-24
---> 
 
 ### vCD Network Types
 
