@@ -15,10 +15,10 @@ Updated: 2021-03-24
   <img src="images/1-external.png" width="1000" style="border: 1px solid black"> 
 <br>
 
-- **[Organization](https://docs.vmware.com/en/VMware-Cloud-Director/10.2/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-B208CDD2-5D46-4841-8F3C-BED9E4F27F07.html?hWord=N4IghgNiBcIPYCcDmYB2BLAXmALuuqABKgKY4DuiA1iAL5A)** networks are backed by NSX Data Center for vSphere which can be created by an vDC organization administrator or higher priviledged user.  These networks provide various access levels within the vDC organization.  These types are:
+- **[Organization](https://docs.vmware.com/en/VMware-Cloud-Director/10.2/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-B208CDD2-5D46-4841-8F3C-BED9E4F27F07.html)** networks are backed by NSX Data Center for vSphere which can be created by an vDC organization administrator or higher priviledged user.  These networks provide various access levels within the vDC organization.  These types are:
   - Direct - direct layer 2 external network connectivity to virtual machines outside of the organization vDC (_currently not available for [VMWare Solutions on IBM Cloud](https://cloud.ibm.com/infrastructure/vmware-solutions/console)_).
-  - Isolated (Internal) - a private network that only organization virtual machines and vApps can connect to.
-  - Routed - a network that provides controlled access to external networks by use of network address translation (NAT), firewall, and VPN settings.
+  - [Isolated (Internal)](https://docs.vmware.com/en/VMware-Cloud-Director/10.2/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-BCF1FEB1-F50C-4E11-8453-EED101396D0D.html) - a private network that only organization virtual machines and vApps can connect to.
+  - [Routed](https://docs.vmware.com/en/VMware-Cloud-Director/10.2/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-74C4D27F-9E2A-4EB2-BBE1-CDD45C80E270.html) - a network that provides controlled access to external networks by use of network address translation (NAT), firewall, and VPN settings.
   - Imported - logical network segments that are created in NSX-T Data Center and use an existing NSX-T Data Center logical switch (_currently not available for [VMWare Solutions on IBM Cloud](https://cloud.ibm.com/infrastructure/vmware-solutions/console)_).
 
   From the datacenter view<br>
@@ -41,7 +41,7 @@ Updated: 2021-03-24
 
 <br>
 
-- **[vApp](https://docs.vmware.com/en/VMware-Cloud-Director/10.2/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-B95FB8AF-C428-4FCB-88DA-5DCA35B19B5A.html)** networks are created as part of the vApp by an user with vApp Author rights or a higher priviledged user.  
+- **[vApp](https://docs.vmware.com/en/VMware-Cloud-Director/10.2/VMware-Cloud-Director-Tenant-Portal-Guide/GUID-FCBC791B-3183-4CD9-A194-856E98CC32D3.html)** networks are created as part of the vApp by an user with vApp Author rights or a higher priviledged user.  
 
   VApp networks can also be connected to Organization networks.  The connections can be direct or fenced. Fencing allows identical virtual machines in different vApps to be powered on without conflict by isolating the MAC and IP addresses of the virtual machines.
 
