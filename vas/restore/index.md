@@ -41,8 +41,8 @@ The header describes the type of VM/vApp backup job was created as well as the t
 ----------------
 
 - *Supported* = The use case and is expected to work, it not working please open a ticket.
-- ***NOT** Applicable* = no vApp visible to delete
-- ***NOT** Supported* = VM cannot be restored to the original location, because it is no longer available.
+- *NOT Applicable* = no vApp visible to delete
+- *NOT Supported* = VM cannot be restored to the original location, because it is no longer available.
 ----------------
 Once you have had a chance to review this table, lets look at a couple of examples on how to restore successfully.
 
