@@ -7,7 +7,7 @@ Once you have [Setup a simple backup job](https://mlwiles.github.io/vmwaresoluti
 1. a vApp (which is the vApp and *ALL* of the Virtual Machines in it)
 2. a VM (this will also include information about the vApp the VM is contained in) 
 
-Knowing the types of backups that we have in place, we can now look at the use cases in which we can restore.  We can confirm our requirements are met, or take an action item to modify existing backups or add additional.  
+Knowing the types of backups that we have in place; we can now look at the use cases in which we can restore.  We can confirm our requirements are met or take an action item to modify existing backups or add additional.  
 
 ### Backup and Restore matrix
 
@@ -17,7 +17,7 @@ The header describes the type of VM/vApp backup job was created as well as the t
 
 ----------------
 
-| vCD Action<br>Create  | Veeam<br>Job Type | vCD Action<br>Delete | Restore<br>VM Keep | Restore<br>VM Overwrite | Restore<br>vApp Keep	| Restore<br>vApp Overwrite |
+| vCD Action<br>Create  | Veeam<br>Job Type | vCD Action<br>Delete | Restore<br>VM Keep | Restore<br>VM Overwrite | Restore<br>vApp Keep    | Restore<br>vApp Overwrite |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | **Create vApp & VM** |  |  |  |  |  |  |
 |  | **Backed up VM**  |  |  |  |  |  |
@@ -50,12 +50,11 @@ Once you have had a chance to review this table, lets look at a couple of exampl
 ### Restore and Keep
 
 
-
 ### Restore and Replace
-
 
 
 _Note the information described in this example are guidelines.  There are multiple ways to configure the various parts of the example.  Please adjust accordingly for your needs._
 
 [Veeam Availability Suite](https://mlwiles.github.io/vmwaresolutions/vas/)<br/>
 [Main Page](https://mlwiles.github.io/vmwaresolutions)
+
