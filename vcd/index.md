@@ -11,7 +11,7 @@ Some different use cases involving vCD. Most likely these will be using VMWare S
   - [Simple Deploy of a VM](https://mlwiles.github.io/vmwaresolutions/vcd/vm101/)
   - [Networking made easy](https://mlwiles.github.io/vmwaresolutions/vcd/network101/)
   - [Customized VMs](https://mlwiles.github.io/vmwaresolutions/vcd/custom-vms/)
-  - [Internet access](https://mlwiles.github.io/vmwaresolutions/vcd/internet/)
+  - [Outbound access](https://mlwiles.github.io/vmwaresolutions/vcd/outbound/)
   - [Secure inbound access](https://mlwiles.github.io/vmwaresolutions/vcd/inbound/)
   - [Creating vAPP Templates](https://mlwiles.github.io/vmwaresolutions/vcd/vapp-templates/)
 - Private Network Enpoints (PNE)
