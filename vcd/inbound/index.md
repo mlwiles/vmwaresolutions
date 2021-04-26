@@ -1,6 +1,6 @@
-## vCD - Secure inbound access (Coming Soon)
+## vCD - Secure inbound access
 
-Updated: 2021-03-31
+Updated: 2021-04-25
 
 If you are finding that the Web Console in your vDC is not quite meeting your needs:<br>
 Compute > Virtual Machine > MACHINE > Actions > Launch Web Console
@@ -11,7 +11,7 @@ Compute > Virtual Machine > MACHINE > Actions > Launch Web Console
 
 ### Finished Picture
 
-The end goal is to open up your Edge Service Gateway (ESG) to securely enable you to connect either via Secure Shell (SSH), Remote Desktop (RDP), etc ... to your VM(s).
+The end goal is to open your Edge Service Gateway (ESG) to securely enable you to connect either via Secure Shell (SSH), Remote Desktop (RDP), etc ... to your VM(s).
 
 Below is a use case where we will configure inbound SSH from a whitelisted (HOME) ip address to our vm in our vDC.
 
@@ -19,24 +19,103 @@ Below is a use case where we will configure inbound SSH from a whitelisted (HOME
 
 ### Data Collection 
 
-For this example we need the following information:
-- Home or remote IP address (e.g. [What's my IP](https://whatismyipaddress.com/)): 75.183.214.216
-- Public IP address for my ESG (see below): 169.59.231.66
-- Virtual Machine IP: (see below)
+For this example, we need the following information:
+- Home or remote IP address (e.g. [What's my IP](https://whatismyipaddress.com/)): `75.183.214.216`
+- Public IP address for my ESG (see below): `169.59.231.66`
+- Virtual Machine IP: (see below): `172.16.10.22`
 
 ### Public IP address range can be found on your ESG
 
 Networking > Edges > EDGENAME > External Networks > IP Allocations<br>
-There will be 5 IP addresses assigned to your ESG at creation time.  Any of these will work for this purpose.
+There will be 5 IP addresses assigned to your ESG at creation time.  Any of these will work for this purpose.  Select one of the IPs to use as inbound IP:  169.59.231.66
 
 <img src="images/2-esg-publicips.png" style="border: 1px solid black">
 
+### vDC Network
+
+You must create a network if one does not already exist that will be used to route the inbound traffic.
+
+For this example, I created a network with the following criteria:
+- Gateway CIDR: `172.16.10.1/24`
+- Type: `Routed`
+- Connection Type: `Subinterface`
+- Static IP Pool: `172.16.10.10-172.16.10.20`
+
+Review [Networks made easy](https://mlwiles.github.io/vmwaresolutions/vcd/network101/) for additional information on how to create a network.
+
+<img src="images/3-network.png" style="border: 1px solid black">
+
+If using vApps, the network must be attached to the vApp.  
+
+Compute > vApps > Networks > New
+
+<img src="images/4-vapp-network.png" style="border: 1px solid black">
+
+OrgVDC Network > 172.16.10.0/24 (in the case of this example)
+
+<img src="images/5-vapp-network.png" style="border: 1px solid black">
+
 ### Virtual Machine IP
 
-TO_BE_CONTINUED
+Make sure you have a VM attached to the Network and assign an IP
 
+Compute > vApps > Virtual Machine > MACHINE > Hardware > NICs > Edit
+
+<img src="images/6-vm-network.png" style="border: 1px solid black">
+
+Select the NIC
+- Primary NIC
+- Connected
+- Network (`172.16.10.0/24` in the case of this example)
+- IP Mode (`Static - Manual` for this example)
+- IP (`172.16.10.22` in the case of this example)
+
+<img src="images/7-vm-network.png" style="border: 1px solid black">
+
+Once set, Force Customization on the VM to have VMWare Tools setup the networking.
+
+<img src="images/8-vm-poweron.png" style="border: 1px solid black">
+
+### Allow Access inbound
+
+Create the ESG Firewall rule to allow the inbound traffic.  In this case we are going to allow traffic from the Remote IP on Port 2222
+
+Networking > Edges > EDGENAME > Services<br>
+
+<img src="images/9-esg-firewall.png" style="border: 1px solid black">
+
+From the Firewall tab, select the `+` to add a new rule.  Edit the contents of the rule:
+- Name: `Inbound Secure`
+- Source: Remote IP address (for this example `75.183.214.216`)
+- Service: What service to allow (for this example TCP with a destination port of `2222`)
+
+Don't forget to `Save changes`
+
+<img src="images/10-esg-firewall.png" style="border: 1px solid black">
+
+Create the ESG DNAT rule to change the destination of traffic from port 2222 on the external network to 22 on the internal network, select `+ DNAT` button to add a new DNAT rule:
+- Applied on: `tenant external network`
+- Original IP Address: Public IP address for my ESG: `169.59.231.66`
+- Original Port: `2222`
+- Translated IP Address: IP of the VM: `172.16.10.22`
+- Translated Port: `22`
+
+Don't forget to `Save changes`
+
+<img src="images/11-esg-dnat.png" style="border: 1px solid black">
+
+### Test the rule
+
+To test the rule, I will open a terminal on my local machine and try to ssh to the machine:<br>
+`ssh root@169.59.231.66 -p 2222`
+
+<img src="images/12-test.png" style="border: 1px solid black">
+
+For more details on deploying VMs see [vCD - Simple Deploy of a VM
+](https://mlwiles.github.io/vmwaresolutions/vcd/vm101/).
 
 _Note the information described in this example are guidelines.  There are multiple ways to configure the various parts of the example.  Please adjust accordingly for your needs._
 
 [VMWare vCloud Director](https://mlwiles.github.io/vmwaresolutions/vcd/)<br/>
 [Main Page](https://mlwiles.github.io/vmwaresolutions)
+
