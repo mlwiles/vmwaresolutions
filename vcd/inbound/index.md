@@ -41,7 +41,7 @@ For this example, I created a network with the following criteria:
 - Connection Type: `Subinterface`
 - Static IP Pool: `172.16.10.10-172.16.10.20`
 
-Review [Networks made easy](https://mlwiles.github.io/vmwaresolutions/vcd/network101/) for additional information on how to create a network.
+Review [vCD -   Networks made easy](https://mlwiles.github.io/vmwaresolutions/vcd/network101/) for additional information on how to create a network.
 
 <img src="images/3-network.png" style="border: 1px solid black">
 
