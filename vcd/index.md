@@ -15,6 +15,7 @@ Some different use cases involving vCD. Most likely these will be using VMWare S
   - [Network troubleshooting (_coming soon_)](https://mlwiles.github.io/vmwaresolutions/vcd/networktrouble/)
   - [Customized VMs](https://mlwiles.github.io/vmwaresolutions/vcd/custom-vms/)
   - [Creating vAPP Templates (_coming soon_)](https://mlwiles.github.io/vmwaresolutions/vcd/vapp-templates/)
+  - [Passwords and Login Messages](https://mlwiles.github.io/vmwaresolutions/vcd/pwd-motd/)
 - Private Network Enpoints (PNE)
   - [Order IBM Private Network Endpoint (PNE)](https://mlwiles.github.io/vmwaresolutions/vcd/order-pne/)
   - [IPSec Tunnel over IBM PNE - ESG](https://mlwiles.github.io/vmwaresolutions/vcd/ipsec-esg-pne/)
@@ -22,6 +23,6 @@ Some different use cases involving vCD. Most likely these will be using VMWare S
   - [IPSec Tunnel over IBM PNE - Vyatta (_coming soon_)](https://mlwiles.github.io/vmwaresolutions/vcd/ipsec-vyatta-pne/)
   - [IPSec Tunnel over IBM PNE - Fortigate (_coming soon_)](https://mlwiles.github.io/vmwaresolutions/vcd/ipsec-fortigate-pne/)
 - Terraform
-  - [Terraform deploying all OS templates (_coming soon_)](https://mlwiles.github.io/vmwaresolutions/vcd/terraform/all/)
+  - [Terraform deploying all OS templates](https://mlwiles.github.io/vmwaresolutions/vcd/terraform/all/)
 
 [Main Page](https://mlwiles.github.io/vmwaresolutions)
