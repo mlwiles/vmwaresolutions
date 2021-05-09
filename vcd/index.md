@@ -16,6 +16,7 @@ Some different use cases involving vCD. Most likely these will be using VMWare S
   - [Customized VMs](https://mlwiles.github.io/vmwaresolutions/vcd/custom-vms/)
   - [Creating vAPP Templates (_coming soon_)](https://mlwiles.github.io/vmwaresolutions/vcd/vapp-templates/)
   - [Passwords and Login Messages](https://mlwiles.github.io/vmwaresolutions/vcd/pwd-motd/)
+  - [VMWare Tools](https://mlwiles.github.io/vmwaresolutions/vcd/vmwaretools/)
 - Private Network Enpoints (PNE)
   - [Order IBM Private Network Endpoint (PNE)](https://mlwiles.github.io/vmwaresolutions/vcd/order-pne/)
   - [IPSec Tunnel over IBM PNE - ESG](https://mlwiles.github.io/vmwaresolutions/vcd/ipsec-esg-pne/)

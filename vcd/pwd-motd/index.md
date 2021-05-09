@@ -15,7 +15,7 @@ I will try to address some common questions around password management of the VM
 There are some assumptions I make in this article:<br>
 - the templates used are from the vCD instance `Public Catalog`
 - the OS image information I share can be generalized for the various versions of OS (e.g. Windows 2016 vs Windows 2019 there might be subtle differences)
-- for password management, the VMWare tools software is installed and up to date on the VM
+- for password management, the VMWare tools software is installed and up to date on the VM.  For more details on [VMWare Tools](https://mlwiles.github.io/vmwaresolutions/vcd/vmwaretools/).
 
 For more details on deploying VMs see [Simple Deploy of a VM](https://mlwiles.github.io/vmwaresolutions/vcd/vm101/).
 
@@ -29,7 +29,7 @@ This example I have two VMs deployed:
 
 <img src="images/1-vms-deployed.png" style="border: 1px solid black">
 
-A common questions is how to set the VM password.  If you are using a VM provided from the environment, you can use the `OS Customizations` portion of the VM.
+A common question is how to set the VM password.  If you are using a VM provided from the environment, you can use the `OS Customizations` portion of the VM.
 
 Compute > Virtual Machines > MACHINE-NAME > Guest OS-Customization > EDIT
 
@@ -39,15 +39,15 @@ If the `Auto generate password` is selected and already enabled, the password wi
 
 <img src="images/3-auto-generate-pwd.png" style="border: 1px solid black">
 
-If you wish to override the password settings, you can enter your own.  Un-check the `Auto generate password` will enable the `Specify password` field where you can enter your specific password.  This will not take effect until you Force Customizations.
+If you wish to override the password settings, you can enter your own.  Un-check the `Auto generate password` will enable the `Specify password` field where you can enter your specific password.  This will not take effect until you Force Recustomizations.
 
 <img src="images/4-change-pwd.png" style="border: 1px solid black">
 
-To Force customization changes you have to first `Power Off` the VM.
+To Force Recustomization you have to first `Power Off` the VM.
 
 <img src="images/5-power-off.png" style="border: 1px solid black">
 
-To Force customization changes you have to once the VM is powered off, select `Power-on and Force Recustomization` on the  VM.
+To Force Recustomization changes you select `Power-on and Force Recustomization` on the  VM.
 
 <img src="images/6-power-on-force.png" style="border: 1px solid black">
 
@@ -76,14 +76,14 @@ Back to: [Menu](#toc)
 
 ### <a name="windows"></a>Windows Login Screen (Legal Notice)
 
-Similar to Linux, Windows provides the ability to have a MOTD (Message of the Day) which Windows refers to as the `Legal Notice`.  This can be change for Windows using the Registry Editor (regedit.exe).<br>
+Similar to Linux, Windows provides the ability to have a MOTD (Message of the Day) which Windows refers to as the `Legal Notice`.  This can be changed for Windows using the Registry Editor (regedit.exe).<br>
 _(The Windows images provided from the VMWare Shared environment DO NOT have the MOTD set in the default templates)_. 
 
 <img src="images/10-windows-regedit.png" style="border: 1px solid black">
 
 To update this message, navigate in the Registry Editor to `HKEY_LOCAL_MACHINE/SOFTWARE/Microsoft/Windows NT/CurrentVersion/Winlogon`
-- `LegalNoticeCaption`, and enter the text to be in the title bar
-- `LegalNoticeText`, and enter the text for the main message
+- `LegalNoticeCaption` - enter the text to be in the title bar
+- `LegalNoticeText` - enter the text for the main message
 
 <img src="images/11-windows-legalnotice.png" style="border: 1px solid black">
 
