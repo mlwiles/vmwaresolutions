@@ -1,4 +1,4 @@
-## vCD - VMWare Tools
+## vCD - VMWare Tools Management
 
 Updated: 2021-05-09
 
