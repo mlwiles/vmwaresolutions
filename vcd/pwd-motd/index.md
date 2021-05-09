@@ -1,4 +1,4 @@
-## vCD - Internet and IBM Cloud services access
+## vCD - Password Management and MOTD Splash Screens
 
 Updated: 2021-05-07
 

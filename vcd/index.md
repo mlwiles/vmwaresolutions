@@ -13,7 +13,7 @@ Some different use cases involving vCD. Most likely these will be using VMWare S
   - [Internet and IBM Cloud services access](https://mlwiles.github.io/vmwaresolutions/vcd/outbound/)
   - [Secure inbound access](https://mlwiles.github.io/vmwaresolutions/vcd/inbound/)
   - [Network troubleshooting (_coming soon_)](https://mlwiles.github.io/vmwaresolutions/vcd/networktrouble/)
-  - [Customized VMs](https://mlwiles.github.io/vmwaresolutions/vcd/custom-vms/)
+  - [Customized VMs (_coming soon_)](https://mlwiles.github.io/vmwaresolutions/vcd/custom-vms/)
   - [Creating vAPP Templates (_coming soon_)](https://mlwiles.github.io/vmwaresolutions/vcd/vapp-templates/)
   - [Passwords and Login Messages](https://mlwiles.github.io/vmwaresolutions/vcd/pwd-motd/)
   - [VMWare Tools](https://mlwiles.github.io/vmwaresolutions/vcd/vmwaretools/)
