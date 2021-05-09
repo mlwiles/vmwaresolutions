@@ -43,6 +43,8 @@ Note the task completed `Installed VMWare Tools on Virtual Machine`.  This DOES 
 
 <img src="images/3-mounted-cd.png" style="border: 1px solid black">
 
+Back to: [Menu](#toc)
+
 ###  <a name="linux"></a>Install VMWare Tools on Linux
 
 The following will walk through installing VMWare Tools on a Linux VM.
