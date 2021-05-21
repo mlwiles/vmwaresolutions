@@ -17,12 +17,23 @@ Some different use cases involving vCD. Most likely these will be using VMWare S
   - [Creating vAPP Templates (_coming soon_)](https://mlwiles.github.io/vmwaresolutions/vcd/vapp-templates/)
   - [Passwords and Login Messages](https://mlwiles.github.io/vmwaresolutions/vcd/pwd-motd/)
   - [VMWare Tools](https://mlwiles.github.io/vmwaresolutions/vcd/vmwaretools/)
+- IPSec Tunnel over Public
+  - [Order IBM Cloud VPN Tunnel (_coming soon_)](https://mlwiles.github.io/vmwaresolutions/vcd/order-ipsec/)
+  - [vDC to IBM Cloud VPN Tunnel (_coming soon_)](https://mlwiles.github.io/vmwaresolutions/vcd/ipsec-ibmc/)
+  - [vDC to vDC ESG (_coming soon_)](https://mlwiles.github.io/vmwaresolutions/vcd/ipsec-esg/)
+  - [vDC to SRX (_coming soon_)](https://mlwiles.github.io/vmwaresolutions/vcd/ipsec-srx/)
+  <!-- 
+  - [vDC to Vyatta (_coming soon_)](https://mlwiles.github.io/vmwaresolutions/vcd/ipsec-vyatta/)
+  - [vDC to Fortigate (_coming soon_)](https://mlwiles.github.io/vmwaresolutions/vcd/ipsec-fortigate/)
+  -->
 - Private Network Enpoints (PNE)
-  - [Order IBM Private Network Endpoint (PNE)](https://mlwiles.github.io/vmwaresolutions/vcd/order-pne/)
-  - [IPSec Tunnel over IBM PNE - ESG](https://mlwiles.github.io/vmwaresolutions/vcd/ipsec-esg-pne/)
-  - [IPSec Tunnel over IBM PNE - SRX](https://mlwiles.github.io/vmwaresolutions/vcd/ipsec-srx-pne/)
+  - [Order VMware Solutions Shared PNE](https://mlwiles.github.io/vmwaresolutions/vcd/order-pne/)
+  - [IPSec Tunnel over PNE to ESG](https://mlwiles.github.io/vmwaresolutions/vcd/ipsec-esg-pne/)
+  - [IPSec Tunnel over PNE to SRX](https://mlwiles.github.io/vmwaresolutions/vcd/ipsec-srx-pne/)
+   <!-- 
   - [IPSec Tunnel over IBM PNE - Vyatta (_coming soon_)](https://mlwiles.github.io/vmwaresolutions/vcd/ipsec-vyatta-pne/)
   - [IPSec Tunnel over IBM PNE - Fortigate (_coming soon_)](https://mlwiles.github.io/vmwaresolutions/vcd/ipsec-fortigate-pne/)
+  -->
 - Terraform
   - [Terraform deploying all OS templates](https://mlwiles.github.io/vmwaresolutions/vcd/terraform/all/)
 
