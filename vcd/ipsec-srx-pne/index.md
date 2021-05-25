@@ -31,7 +31,11 @@ To do so, we have deployed an SRX appliance in the vCenter in FRA (Juniper appli
 
 ## Configuring the Dallas vDC.
 
-Same config in Dallas vDC from the referenced example, [IPSec Tunnel over IBM PNE - ESG](https://mlwiles.github.io/vmwaresolutions/vcd/ipsec-esg-pne/), no changes...
+Same config in Dallas vDC from the referenced example, [IPSec Tunnel over IBM PNE - ESG](https://mlwiles.github.io/vmwaresolutions/vcd/ipsec-esg-pne/)<br>
+The change required for IBM VMWare Shared side of the tunnel is to change the IKE version to v2:
+- IKE Option: IKEv2
+
+<img src="images/5-vdc-pne-ipsec.png" width="1000" style="border: 1px solid black">
 
 ## Configuring the Frankfurt vCenter instance (SRX)
 
@@ -42,30 +46,31 @@ interfaces {
     ge-0/0/0 {
         unit 0 {
             family inet {
-                address 172.15.0.1/16;
+                address 10.240.232.10/24;
             }
         }
     }
     ge-0/0/1 {
         unit 0 {
             family inet {
-                address 10.240.232.10/24;
+                address 172.15.0.3/16;
             }
         }
     }
-    fxp0 {
-        unit 0;
-    }
     st0 {
         unit 1 {
-            family inet;
+            family inet {
+                inactive: filter {
+                    input PCAP-VPN;
+                    output PCAP-VPN;
+                }
+            }
         }
     }
 }
 routing-options {
     static {
-        route 10.0.0.0/8 next-hop 10.240.232.1;
-        route 166.8.0.0/14 next-hop 10.240.232.1;
+        route 166.8.0.0/14 next-hop <SOFTLAYER PRIVATE NETWORK GATEWAY>;
         route 172.16.0.0/16 next-hop st0.1;
     }
 }
@@ -81,12 +86,12 @@ security {
             dh-group group5;
             authentication-algorithm sha1;
             encryption-algorithm aes-128-cbc;
-            lifetime-seconds 900;
+            lifetime-seconds 28800;
         }
         policy cse-test-policy {
             mode main;
             proposals cse-test-proposal;
-            pre-shared-key ascii-text "$9$.PznuOIyrK4an9AuREws24JU3n9CpOxNaG"; ## SECRET-DATA
+            pre-shared-key ascii-text "REDACTED"; ## SECRET-DATA
         }
         gateway cse-test-gateway {
             ike-policy cse-test-policy;
@@ -94,6 +99,7 @@ security {
             local-identity hostname ipsec-fra-SRX;
             remote-identity hostname ipsec-dal;
             external-interface ge-0/0/1.0;
+            version v2-only;
         }
     }
     ipsec {
@@ -129,16 +135,6 @@ Finally we will define the security zones and policies per our example.
 security {
     policies {
         from-zone trust to-zone trust {
-            policy default-permit {
-                match {
-                    source-address any;
-                    destination-address any;
-                    application any;
-                }
-                then {
-                    permit;
-                }
-            }
             policy VPN-IN {
                 match {
                     source-address NET-172.16.0.0/16;
@@ -174,7 +170,6 @@ security {
             }
             interfaces {
                 ge-0/0/0.0;
-                ge-0/0/1.0;
                 st0.1;
             }
         }
