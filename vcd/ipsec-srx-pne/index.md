@@ -2,7 +2,8 @@
 
 Updated: 2021-02-09
 
-**NOTE:  _As of 2021-03-01 the vSRX over private PNE to VCD has a known issue where the tunnel fails for 2 minutes every 24 hrs.  Over public works fine and actually has less latency between the SRX and ESG.  There are open work items with Juniper and VMWare to determine where the tunnel config is failing to keep the tunnel active.  Stay tuned for updates_**
+**_NOTE: As of 2021-03-01 the vSRX over private PNE to VCD has a known issue where the tunnel fails for 2 minutes every 24 hrs.  Over public works fine and actually has less latency between the SRX and ESG.  There are open work items with Juniper and VMWare to determine where the tunnel config is failing to keep the tunnel active.  Stay tuned for updates<br>
+UPDATE: 2021-05-24 the vSRX over private PNE to VCD has a requirement to use IKEv2 and it seems to have resolved the issue identified earlier this year_**
 
 Based on the initial example of an [IPSec Tunnel over IBM PNE - ESG](https://mlwiles.github.io/vmwaresolutions/vcd/ipsec-esg-pne/), this modification of the example will change the 'external' or 'inbound' side of the IPSec tunnel which was using ESG and to now use an SRX.
 
