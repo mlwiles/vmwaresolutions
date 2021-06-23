@@ -9,14 +9,16 @@ Some different use cases involving vCD. Most likely these will be using VMWare S
 
 - vCD Basics
   - [Simple Deploy of a VM](https://mlwiles.github.io/vmwaresolutions/vcd/vm101/)
-  - [Networking made easy](https://mlwiles.github.io/vmwaresolutions/vcd/network101/)
-  - [Internet and IBM Cloud services access](https://mlwiles.github.io/vmwaresolutions/vcd/outbound/)
-  - [Secure inbound access](https://mlwiles.github.io/vmwaresolutions/vcd/inbound/)
-  - [Network troubleshooting (_coming soon_)](https://mlwiles.github.io/vmwaresolutions/vcd/networktrouble/)
   - [Customized VMs (_coming soon_)](https://mlwiles.github.io/vmwaresolutions/vcd/custom-vms/)
   - [Creating vAPP Templates (_coming soon_)](https://mlwiles.github.io/vmwaresolutions/vcd/vapp-templates/)
   - [Passwords and Login Messages](https://mlwiles.github.io/vmwaresolutions/vcd/pwd-motd/)
   - [VMWare Tools](https://mlwiles.github.io/vmwaresolutions/vcd/vmwaretools/)
+- vCD Networking
+  - [Networking made easy](https://mlwiles.github.io/vmwaresolutions/vcd/network101/)
+  - [Internet and IBM Cloud services access](https://mlwiles.github.io/vmwaresolutions/vcd/outbound/)
+  - [Secure inbound access](https://mlwiles.github.io/vmwaresolutions/vcd/inbound/)
+  - [Network troubleshooting (_coming soon_)](https://mlwiles.github.io/vmwaresolutions/vcd/networktrouble/)
+  - [Network HA via DC Groups](https://mlwiles.github.io/vmwaresolutions/vcd/networkdcg/)
 - IPSec Tunnel over Public
   - [Order IBM Cloud VPN Tunnel (_coming soon_)](https://mlwiles.github.io/vmwaresolutions/vcd/order-ibmc-ipsec/)
   - [vDC to IBM Cloud VPN Tunnel (_coming soon_)](https://mlwiles.github.io/vmwaresolutions/vcd/ipsec-ibmc/)
