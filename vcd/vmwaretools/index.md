@@ -55,16 +55,16 @@ Once the Media is made available in the [Install Preparation](#install) section,
 mkdir /mnt/cdrom
 mount /dev/cdrom /mnt/cdrom
 cd /mnt/cdrom
-cp VMWareTools-VERSION.tar.gz /tmp
+cp VMwareTools-VERSION.tar.gz /tmp
 cd /tmp
-tar zxvf VMWareTools-VERSION.tar.gz
+tar zxvf VMwareTools-VERSION.tar.gz
 cd vmware-tools-distrib
 ```
 
 Now begin the installation of the VMWare Tools (this can change with every version, but should follow similar pattern of questioning).  _When answering the questions from the install script, default values are recommended_
 
 ```
-./vmware-install.sh
+./vmware-install.pl
 ```
 <img src="images/4-linux.png" style="border: 1px solid black">
 

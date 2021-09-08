@@ -27,6 +27,9 @@ Routing
 Default route is on public external network
 Additional routes required?
 
+Distributed Routing
+Ensure Enable Distributed routing 
+
 ESG
 SSH Access
 Basic commands
