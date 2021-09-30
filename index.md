@@ -12,6 +12,7 @@ Some tips and tricks I picked up while working on [VMWare Solutions on IBM Cloud
   - I can change and/or update my disclosure at anytime :)
 
 Topics:
+- [IBM Cloud](https://mlwiles.github.io/vmwaresolutions/ibmcloud/)
 - [VMWare vCloud Director](https://mlwiles.github.io/vmwaresolutions/vcd/)
 - [Veeam Availability Suite](https://mlwiles.github.io/vmwaresolutions/vas/)
 - [Veeam Cloud Connect Replication](https://mlwiles.github.io/vmwaresolutions/vccr/)
