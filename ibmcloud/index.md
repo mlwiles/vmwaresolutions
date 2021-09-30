@@ -5,6 +5,9 @@
 
 Some different use cases involving IBM Cloud. Most likely these will be using VMWare Solutions on IBM Cloud.
 
+- Getting Started
+  - [Create an IBM Cloud Account](https://mlwiles.github.io/vmwaresolutions/ibmcloud/account/)
+  - [Accessing VMWare Solutions](https://mlwiles.github.io/vmwaresolutions/ibmcloud/ic4v/)
 - VMWare Shared
   - [Ordering a vDC](https://mlwiles.github.io/vmwaresolutions/ibmcloud/ordervdc/)
   - [Accessing vCloud Director admin Portal (_coming soon_)](https://mlwiles.github.io/vmwaresolutions/ibmcloud/orgadmin/)
