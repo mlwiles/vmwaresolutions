@@ -19,9 +19,9 @@ Some very basics for Terraform:
 - _terraform destroy_ – reversal or tear down of config vs. the state
 
 ### Terraform Files 
-- [variables.tf](https://github.com/mlwiles/stuff/blob/master/scripts/terraform/vcd/prep-templates/variables.tf) – File where you define variables – types, defaults, etc
-- [terraform.tfvars](https://github.com/mlwiles/stuff/blob/master/scripts/terraform/vcd/prep-templates/terraform.tfvars) – File where you assign variables, override defaults set in the definitions
-- [main.tf](https://github.com/mlwiles/stuff/blob/master/scripts/terraform/vcd/prep-templates/main.tf) – Playbook for the script to execute
+- [variables.tf](https://github.com/mlwiles/scripts/tree/main/terraform/vcd/prep-templates/variables.tf) – File where you define variables – types, defaults, etc
+- [terraform.tfvars](https://github.com/mlwiles/scripts/tree/main/terraform/vcd/prep-templates/terraform.tfvars) – File where you assign variables, override defaults set in the definitions
+- [main.tf](https://github.com/mlwiles/scripts/tree/main/terraform/vcd/prep-templates/main.tf) – Playbook for the script to execute
 
 ## VMWare Shared Usecase
 
@@ -266,8 +266,8 @@ Reference Links<br>
 [Terraform vCD Provider](https://github.com/vmware/terraform-provider-vcd)<br/>
 
 My Source Terraform<br/>
-[Create / Prep Images](https://github.com/mlwiles/stuff/tree/master/scripts/terraform/vcd/prep-templates)<br/>
-[Test Local Images](https://github.com/mlwiles/stuff/tree/master/scripts/terraform/vcd/prep-templates-test)<br/>
+[Create / Prep Images](https://github.com/mlwiles/scripts/tree/main/terraform/vcd/prep-templates)<br/>
+[Test Local Images](https://github.com/mlwiles/scripts/tree/main/terraform/vcd/prep-templates-test)<br/>
 
 [VMWare vCloud Director](https://mlwiles.github.io/vmwaresolutions/vcd/)<br/>
 [Main Page](https://mlwiles.github.io/vmwaresolutions)
